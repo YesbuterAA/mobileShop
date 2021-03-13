@@ -1,11 +1,13 @@
 module.exports = {
+  /* eslint-disable */
+  // eslint-disable-next-line
   root: true,
   env: {
     node: true
   },
   extends: [
-    'plugin:vue/essential',
-    '@vue/standard'
+    'eslint:recommended',
+    'plugin:vue/recommended'
   ],
   parserOptions: {
     parser: 'babel-eslint'

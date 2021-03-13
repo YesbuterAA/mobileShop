@@ -1,32 +1,38 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <root />
   </div>
 </template>
 
+<script>
+import root from './root.vue'
+export default {
+  components: {
+    root
+  },
+  methods: {
+  },
+  updataed() {
+    this.Forum()
+  }
+}
+</script>
 <style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-color: #ffffff;
 }
-
-#nav {
-  padding: 30px;
+#app a.router-link-exact-active {
+  color: #007FFF;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+a {
+  text-decoration: none;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+ a:hover, a:visited, a:link, a:active {
+   color: #71777C;
+ }
 </style>
